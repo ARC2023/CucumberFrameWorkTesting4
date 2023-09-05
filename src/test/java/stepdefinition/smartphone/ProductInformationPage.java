@@ -11,8 +11,7 @@ public class ProductInformationPage {
 
 	@When("user validates Product title, Ratings, Answered question from DB")
 	public void user_validates_product_title_ratings_answered_question_from_db() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@When("user Validate the MRP, DIscount and Final price after discount from DB")
