@@ -1,0 +1,1452 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 9, 2023 10:08:41 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 9, 2023 10:08:41 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 9, 2023 10:08:42 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='76%'><b>10</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='23%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='45%'><b>30</b> steps passed</small></div>
+<div>
+<small data-tooltip='4%'><b>3</b> steps failed,
+<b>33</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Validate smart phone ordering with exchange using net banking":0.07,"Validate smart phone ordering with exchange using COD":0.005,"Validate smart phone ordering with exchange using Debit Card":0.012,"Tag implementations for filtering":0.034,"Tag filtering":0.003,"Test Driven Development":0.052
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@All2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@SO</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>@All1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Sanity</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>Cucummber_ARC</td>
+</tr>
+<tr>
+<td>user</td>
+<td>ARC</td>
+</tr>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 10,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 30,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 33,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@All2</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@SO</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@All1</a><a class="dropdown-item" href="#">@Sanity</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate smart phone ordering with exchange using net banking</p>
+            <p class="text-sm">
+              <span>10:08:42 am</span> / <span>00:00:00:070</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate smart phone ordering with exchange using net banking</h5>
+<span class='badge badge-success'>09.09.2023 10:08:42</span>
+<span class='badge badge-danger'>09.09.2023 10:08:42</span>
+<span class='badge badge-default'>00:00:00:070</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To verify smartphone ordering with exchange using net banking</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinition.smartphone.LoginPage.user_loads_the_amazon_url()">
+                <span>Given user loads the Amazon url</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "hooks.ScreenShot.driver" is null
+	at hooks.ScreenShot.takeScreenShot(ScreenShot.java:25)
+	at stepdefinition.smartphone.LoginPage.user_loads_the_amazon_url(LoginPage.java:17)
+	at ✽.user loads the Amazon url(file:///C:/Users/glend/eclipse-workspace/CucumberFrameworkTesting4/src/test/resources/SmartPhoneOrdering/TC01-Order%20mobile%20withexchanges%20using%20Net%20Banking.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.LoginPage.user_enters_valida_credentials()">
+                <span>When user enters valida credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.LoginPage.user_lands_on_home_page_of_amazon()">
+                <span>Then user lands on Home page of Amazon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.HomePage.user_select_electronics_category_from_dropdown()">
+                <span>When user select electronics category from dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.HomePage.enter_smart_phone_details_in_the_search_bar()">
+                <span>And enter smart phone details in the search bar</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.HomePage.click_on_search_button()">
+                <span>And Click on search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.SearchCatalouguePage.user_will_land_on_search_catalouge()">
+                <span>Then user will land on search catalouge</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.SearchCatalouguePage.user_clicks_on_any_smart_phone_from_the_catalouge()">
+                <span>When user Clicks on any smart phone from the catalouge</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_lands_on_product_information_page()">
+                <span>Then user lands on product information page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_validates_product_title_ratings_answered_question_from_db()">
+                <span>When user validates Product title, Ratings, Answered question from DB</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_validate_the_mrp_d_iscount_and_final_price_after_discount_from_db()">
+                <span>And user Validate the MRP, DIscount and Final price after discount from DB</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.validate_replacement_and_return_policy_info_along_with_other_details()">
+                <span>And Validate replacement and return policy info along with other details</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.validate_color_and_style_name_selection_is_enabled()">
+                <span>And Validate color and style name selection is enabled</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.validate_product_core_information()">
+                <span>And Validate Product core information</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_clicks_on_without_exchange_option()">
+                <span>When user Clicks on without exchange option</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.validate_delivery_eta_address_pin_stock_avaiability_and_selller_information()">
+                <span>And Validate delivery ETA, Address pin, Stock avaiability and Selller information</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.no_plans_selected()">
+                <span>And No plans selected</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_clicks_on_add_to_cart()">
+                <span>And user Clicks on add to cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.cart_under_additional_information_page_should_come()">
+                <span>Then Cart under additional information page should come</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_clicks_on_cart_under_additional_information_page_of_cart()">
+                <span>When user Clicks on Cart under additional information page of cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.ProductInformationPage.user_clicks_on_proceed_to_buy_button()">
+                <span>And user Clicks on Proceed to buy button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.AddressSelectionPage.user_lands_on_address_selection_page()">
+                <span>Then user lands on address selection page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.AddressSelectionPage.user_selects_appropriate_address()">
+                <span>When user Selects appropriate address</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.AddressSelectionPage.click_on_use_this_address_button()">
+                <span>And click on use this address button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.PaymentOptionsPage.focus_should_shift_on_payment_methods()">
+                <span>Then focus should shift on payment methods</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.PaymentOptionsPage.user_selects_cod()">
+                <span>When user Selects COD</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.PaymentOptionsPage.click_on_use_this_payment_method_button()">
+                <span>And click on use this payment method button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.OrderConfirmation.validate_the_order_summary_page()">
+                <span>Then validate the order summary page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.OrderConfirmation.user_click_on_place_your_order()">
+                <span>When user Click on place your order</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.OrderConfirmation.validate_order_confirmation_page()">
+                <span>Then Validate order confirmation page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate smart phone ordering with exchange using COD</p>
+            <p class="text-sm">
+              <span>10:08:42 am</span> / <span>00:00:00:005</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate smart phone ordering with exchange using COD</h5>
+<span class='badge badge-success'>09.09.2023 10:08:42</span>
+<span class='badge badge-danger'>09.09.2023 10:08:42</span>
+<span class='badge badge-default'>00:00:00:005</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log fail-bg mr-2">Fail</span>To verify smartphone ordering with exchange using COD</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinition.smartphone.LoginPage.user_loads_the_amazon_url()">
+                <span>Given user loads the Amazon url</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "hooks.ScreenShot.driver" is null
+	at hooks.ScreenShot.takeScreenShot(ScreenShot.java:25)
+	at stepdefinition.smartphone.LoginPage.user_loads_the_amazon_url(LoginPage.java:17)
+	at ✽.user loads the Amazon url(file:///C:/Users/glend/eclipse-workspace/CucumberFrameworkTesting4/src/test/resources/SmartPhoneOrdering/TC02-Order%20mobile%20withexchanges%20using%20COD.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.LoginPage.user_enters_valida_credentials()">
+                <span>When user enters valida credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.LoginPage.user_lands_on_home_page_of_amazon()">
+                <span>Then user lands on Home page of Amazon</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate smart phone ordering with exchange using Debit Card</p>
+            <p class="text-sm">
+              <span>10:08:42 am</span> / <span>00:00:00:012</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate smart phone ordering with exchange using Debit Card</h5>
+<span class='badge badge-success'>09.09.2023 10:08:42</span>
+<span class='badge badge-danger'>09.09.2023 10:08:42</span>
+<span class='badge badge-default'>00:00:00:012</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="47"><span class="badge log fail-bg mr-2">Fail</span>To verify smartphone ordering with exchange using Debit Card</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinition.smartphone.LoginPage.user_loads_the_amazon_url()">
+                <span>Given user loads the Amazon url</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "hooks.ScreenShot.driver" is null
+	at hooks.ScreenShot.takeScreenShot(ScreenShot.java:25)
+	at stepdefinition.smartphone.LoginPage.user_loads_the_amazon_url(LoginPage.java:17)
+	at ✽.user loads the Amazon url(file:///C:/Users/glend/eclipse-workspace/CucumberFrameworkTesting4/src/test/resources/SmartPhoneOrdering/TC03-Order%20mobile%20withexchanges%20using%20Debit%20Card.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.LoginPage.user_enters_valida_credentials()">
+                <span>When user enters valida credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.smartphone.LoginPage.user_lands_on_home_page_of_amazon()">
+                <span>Then user lands on Home page of Amazon</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tag implementations for filtering</p>
+            <p class="text-sm">
+              <span>10:08:42 am</span> / <span>00:00:00:034</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tag implementations for filtering</h5>
+<span class='badge badge-success'>09.09.2023 10:08:42</span>
+<span class='badge badge-danger'>09.09.2023 10:08:42</span>
+<span class='badge badge-default'>00:00:00:034</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Tag case one</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.start_implementation_for_tag()">
+                <span>Given start implementation for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.some_other_precondition_for_tag()">
+                <span>And some other precondition for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.i_complete_action_one()">
+                <span>When I complete action one</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Tag case two</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.start_implementation_for_tag()">
+                <span>Given start implementation for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.some_other_precondition_for_tag()">
+                <span>And some other precondition for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.i_complete_action_two_by_passing_into_text_box(java.lang.String)">
+                <span>When I complete action two by passing "Jonal" into text box</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Tag case three</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.start_implementation_for_tag()">
+                <span>Given start implementation for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.some_other_precondition_for_tag()">
+                <span>And some other precondition for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.i_complete_action_three()">
+                <span>When I complete action three</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tag filtering</p>
+            <p class="text-sm">
+              <span>10:08:42 am</span> / <span>00:00:00:003</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tag filtering</h5>
+<span class='badge badge-success'>09.09.2023 10:08:42</span>
+<span class='badge badge-danger'>09.09.2023 10:08:42</span>
+<span class='badge badge-default'>00:00:00:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>tag case four</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.start_implementation_for_tag()">
+                <span>Given start implementation for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.some_other_precondition_for_tag()">
+                <span>And some other precondition for tag</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.smartphone.TagImplementations.i_complete_action_four()">
+                <span>When I complete action Four</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="89"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Driven Development</p>
+            <p class="text-sm">
+              <span>10:08:42 am</span> / <span>00:00:00:052</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Driven Development</h5>
+<span class='badge badge-success'>09.09.2023 10:08:42</span>
+<span class='badge badge-danger'>09.09.2023 10:08:42</span>
+<span class='badge badge-default'>00:00:00:052</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=89</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="90"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to write a step with "Kalyani" testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I check for the "15" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Bhandara" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to write a step with "Ragini" testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I check for the "17" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Chandrapur" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to write a step with "Kauntubh" testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I check for the "27" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "WB" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to write a step with "Surekha" testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I check for the "19" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Wardha" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="123"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to write a step with "Tanaya" testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I check for the "47" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Pune" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="131"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario outline</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to write a step with "Shubhangi" testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I check for the "37" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "MP" in step testing4</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@All2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@All2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='80' id='81'>tag case four</a>
+<div class="">
+<span class="badge badge-default">Tag filtering.tag case four</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='64'>Tag case two</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case two</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@SO</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SO</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='91'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='99'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='107'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='115'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='123'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='131'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To verify smartphone ordering with exchange using net banking</a>
+<div class="">
+<span class="badge badge-default">Validate smart phone ordering with exchange using net banking.To verify smartphone ordering with exchange using net banking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='56'>Tag case one</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case one</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='64'>Tag case two</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case two</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='80' id='81'>tag case four</a>
+<div class="">
+<span class="badge badge-default">Tag filtering.tag case four</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='91'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='99'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='107'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='115'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='123'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='89' id='131'>Title of your scenario outline</a>
+<div class="">
+<span class="badge badge-default">Test Driven Development.Title of your scenario outline</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@All1</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@All1</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='56'>Tag case one</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case one</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='64'>Tag case two</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case two</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='72'>Tag case three</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case three</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='56'>Tag case one</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case one</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='55' id='72'>Tag case three</a>
+<div class="">
+<span class="badge badge-default">Tag implementations for filtering.Tag case three</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Given user loads the Amazon url</a>
+<div class="">
+<span class="badge badge-default">Validate smart phone ordering with exchange using net banking.To verify smartphone ordering with exchange using net banking.Given user loads the Amazon url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='37' id='41'>Given user loads the Amazon url</a>
+<div class="">
+<span class="badge badge-default">Validate smart phone ordering with exchange using COD.To verify smartphone ordering with exchange using COD.Given user loads the Amazon url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:08:42 am</td>
+<td>
+<a href="#" class="linked" test-id='46' id='50'>Given user loads the Amazon url</a>
+<div class="">
+<span class="badge badge-default">Validate smart phone ordering with exchange using Debit Card.To verify smartphone ordering with exchange using Debit Card.Given user loads the Amazon url</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

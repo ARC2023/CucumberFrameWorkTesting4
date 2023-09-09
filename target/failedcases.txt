@@ -1,0 +1,3 @@
+file:src/test/resources/SmartPhoneOrdering/TC01-Order%20mobile%20withexchanges%20using%20Net%20Banking.feature:4
+file:src/test/resources/SmartPhoneOrdering/TC03-Order%20mobile%20withexchanges%20using%20Debit%20Card.feature:4
+file:src/test/resources/SmartPhoneOrdering/TC02-Order%20mobile%20withexchanges%20using%20COD.feature:4

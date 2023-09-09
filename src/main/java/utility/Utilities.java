@@ -1,15 +1,19 @@
 package utility;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
-
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import driverhandle.DriverInitiator;
+
 
 public class Utilities extends DriverInitiator {
 
@@ -211,4 +215,7 @@ public class Utilities extends DriverInitiator {
 				+ "}, 100);", element);
 	}
 
+	
+	
+	
 }

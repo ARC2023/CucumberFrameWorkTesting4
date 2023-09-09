@@ -60,7 +60,7 @@ public class DriverInitiator {
 	}
 	
 	
-	public static DriverInitiator getInstance() {
+	public static DriverInitiator getDriverInstance() {
 
 		return new DriverInitiator();
 	}

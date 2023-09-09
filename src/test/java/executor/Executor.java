@@ -8,8 +8,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(		
 		features= {"src\\test\\resources\\"},
 		glue= {"hooks","stepdefinition"},
-		plugin= {"pretty"}
-		
+		plugin= {"pretty",
+				"rerun:target/failedcases.txt",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		//,tags="@Smoke"
 		
 		)
 public class Executor {

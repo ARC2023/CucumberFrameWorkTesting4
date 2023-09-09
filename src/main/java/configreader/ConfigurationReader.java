@@ -26,12 +26,7 @@ public class ConfigurationReader {
 	}
 	
 	public static String getConfigProp(String propValue) {
-		/*ConfigurationReader cg = new ConfigurationReader();
-		Properties prope =	cg.setUpPropertiesFile();
-		String value=prope.getProperty(propValue);
-		return value;*/
-		
-		
+				
 		return getInstance().setUpPropertiesFile().getProperty(propValue);
 		
 	}

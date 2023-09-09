@@ -1,6 +1,6 @@
 Feature: Validate smart phone ordering with exchange using net banking
 
-
+@Smoke
 Scenario: To verify smartphone ordering with exchange using net banking
 
 Given user loads the Amazon url
